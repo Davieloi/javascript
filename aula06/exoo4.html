@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo B -- Aula 06</title>
+</head>
+<body>
+    <h1>teste de Strings</h1>
+    <script>
+        /*
+            formatando Strings
+            var s = "Shikamaru";
+            s.length - retorna o tamanho da string (é um atributo, por isso não precisa de parênteses)
+            s.toUpperCase() - retorna a string em maiúsculas (é um metodo, por isso precisa de parênteses)
+            s.toLowerCase() - retorna a string em minúsculas (é um metodo, por isso precisa de parênteses)
+            s.indexOf("n") - retorna a posição do caractere "n" na string
+        */
+
+        var s = prompt("Digite uma palavra: ");
+        document.writeln(`A palavra ${s} tem ${s.length} caracteres.<br>`);
+        document.writeln(`${s.toUpperCase()} em maiúsculas.<br>`);
+        document.writeln(`${s.toLowerCase()} em minúsculas.<br>`);
+
+        /*
+          o write() escreve na tela, mas não quebra a linha, então se você quiser quebrar a linha, você pode usar o <br> no final da string, ou usar o document.writeln() que já quebra a linha automaticamente.
+        */
+        //document.write(`O caractere "n" está na posição ${s.indexOf("n")}.`);
+
+
+
+        /*
+          Formatando Números
+          var n = 123.5;
+          n.toFixed(2) - retorna o número com 2 casas decimais
+          n.toFixed(2).replace(".", ",") - retorna o número com 2 casas decimais e substitui o ponto por vírgula
+          n.localeString("pt-BR", {style: "currency", currency: "BRL"}) - retorna o número formatado como moeda brasileira
+        */
+    </script>
+</body>
+</html>

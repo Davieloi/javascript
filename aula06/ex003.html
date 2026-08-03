@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo B -- Aula 06</title>
+    <style>
+        p {
+            color: red;
+            font-size: 20px;
+        } 
+    </style>
+</head>
+<body>
+    <p>Olá, Mundo!</p>
+    <script>
+
+        var n1 = Number(prompt("Digite um número: "));
+        var n2 = Number(prompt("Digite outro número: "));
+        var soma = String(n1) + String(n2); //isso agora é uma String, não mais um número
+        //o uso do ${} é um tamplate string, que permite a inserção de variáveis dentro de uma string
+        alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`);
+
+    </script>
+</body>
+</html>
